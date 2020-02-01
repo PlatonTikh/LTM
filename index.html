@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Experiment</title>
-</head>
-<body>
-  <p>Hello, dear participant</p>
-</body>
-</html>
+<HTML>
+<HEAD>
+<TITLE>Words-objects research</TITLE>
+<META charset="utf-8">
+</HEAD>
+
+<BODY bgcolor=F7FBE5>
+<p class='instr'>Ваша задача - вписывать в поля формы описания состояний показанных в паре объектов</p>
+<p class='instr'>Старайтесь давать короткие описания</p>
+<br>
+<form id='forma' onsubmit='myfunc()'>
+   <div class='img_block'><img class="first" id='frst' src='chair.jpg'>
+     <img class="second" id='scnd' src='table.jpg'>
+   </div>
+   <div class="inp">
+   <p class="first" name='state1'><input id='state1' maxlength="25" size="40" placeholder="Введите название состояния" value='12'></p>
+   <p class="second" name='state2'><input id='state2' maxlength="25" size="40" placeholder="Введите название состояния" value='he'></p>
+ </div>
+   <label>
+   <input type="submit" for='state' name="submit" id="submit" value="Отправить">
+  </label>
+</form>
+
+</BODY>
+</HTML>
